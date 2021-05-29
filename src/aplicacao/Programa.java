@@ -12,17 +12,14 @@ public class Programa {
 		Locale.setDefault(Locale.US);
 		Scanner sc = new Scanner(System.in);
 
-		Produto produto = new Produto();
 		System.out.println("Informe os dados do produto");
 
 		System.out.println("Nome: ");
-		produto.nome = sc.nextLine();
+		String nome = sc.nextLine();
 
 		System.out.println("Preço: ");
-		produto.preco = sc.nextDouble();
-
-		System.out.println("Quantidade em estoque: ");
-		produto.quantidade = sc.nextInt();
+		double preco = sc.nextDouble();
+		Produto produto = new Produto(nome, preco);
 
 		System.out.println();
 		System.out.println("Dados do produto: " + produto);

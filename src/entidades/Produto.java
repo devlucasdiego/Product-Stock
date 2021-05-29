@@ -5,6 +5,22 @@ public class Produto {
 	public double preco;
 	public int quantidade;
 
+	public Produto() {
+	}
+
+	public Produto(String nome, double preco, int quantidade) {
+		super();
+		this.nome = nome;
+		this.preco = preco;
+		this.quantidade = quantidade;
+	}
+
+	public Produto(String nome, double preco) {
+		super();
+		this.nome = nome;
+		this.preco = preco;
+	}
+
 	// MÉTODOS
 
 	public double valorTotalEstoque() {
